@@ -1,0 +1,117 @@
+
+body{
+    background-color: aliceblue;
+}
+button{
+
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+
+    border-radius: 5px;
+
+    width: calc(100%/4);
+    font-size: larger;
+    font-weight: 500;
+    
+}
+
+.calcContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.calcBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    box-sizing: border-box;
+    border: 5px solid black;
+    height: 50vh;
+    width: 18vw;
+    border-radius: 5px;
+}
+
+.display{
+    box-sizing: border-box;
+    height: 40%;
+    width: 100%;
+    align-self: center;
+    background-color: lightgray;
+    border: 1px solid black;
+    
+}
+
+.calContent{
+    display: flex;
+    /*border: 3px solid orange;*/
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    
+}         
+
+.calcButton{
+    width: 100%;
+    height: 100%;
+    
+}
+.calcButton div{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: calc(100%/5);
+    
+}
+
+.zero{
+    flex-grow: 1;
+}
+.operator {
+    font-size: x-large;
+}
+
+
+.operator, .equals {
+    background-color: Orange;
+}
+
+.operator:hover, .equals:hover {
+    background-color: rgb(252, 187, 68);
+}
+
+.operator:active, .equals:active {
+    background-color: rgb(230, 153, 11);
+}
+
+
+
+.operand, .decimal {
+    background-color: lightblue;
+}
+
+.operand:hover,  .decimal:hover {
+    background-color: rgb(195, 222, 231);
+}
+
+.operand:active,  .decimal:active {
+    background-color: rgb(158, 196, 209);
+}
+
+
+
+.clear, .sign, .percentage {
+    background-color: bisque;
+} 
+
+.clear:hover, .sign:hover, .percentage:hover {
+    background-color: rgb(255, 238, 218);
+} 
+
+.clear:active, .sign:active, .percentage:active {
+    background-color: rgb(233, 208, 178);
+} 
