@@ -5,44 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="myscripts.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="calcContainer">
         <div class="calcBox">
             <div class="display">
-
+                <p id="displayText"></p>
             </div>
             <div class="calContent">
                 <div class="calcButton">
                 <div>
-                <button class="clear">AC</button>
-                <button class="sign">+/-</button>
-                <button class="percentage">%</button>
-                <button class="operator">/</button>
+                <button id="clear" class="clear expand" onclick="clr()">AC</button>
+                <!--<button class="sign" >+/-</button>-->
+                <!--<button class="percentage" onclick="appendToDisplay('%')">%</button>-->
+                <button class="operator" onclick="appendToDisplay('/')">/</button>
                 </div>
                 <div>
-                <button class="operand">7</button>
-                <button class="operand">8</button>
-                <button class="operand">9</button>
-                <button class="operator">*</button>
+                <button class="operand" onclick="appendToDisplay(7)">7</button>
+                <button class="operand" onclick="appendToDisplay(8)">8</button>
+                <button class="operand" onclick="appendToDisplay(9)">9</button>
+                <button class="operator" onclick="appendToDisplay('*')">*</button>
                 </div>  
                 <div>
-                <button class="operand">4</button>
-                <button class="operand">5</button>
-                <button class="operand">6</button>
-                <button class="operator">-</button>
+                <button class="operand" onclick="appendToDisplay(4)">4</button>
+                <button class="operand" onclick="appendToDisplay(5)">5</button>
+                <button class="operand" onclick="appendToDisplay(6)">6</button>
+                <button class="operator" onclick="appendToDisplay('-')">-</button>
                 </div>
                 <div>
-                <button class="operand">1</button>
-                <button class="operand">2</button>
-                <button class="operand">3</button>
-                <button class="operator">+</button>
+                <button class="operand" onclick="appendToDisplay(1)">1</button>
+                <button class="operand" onclick="appendToDisplay(2)">2</button>
+                <button class="operand" onclick="appendToDisplay(3)">3</button>
+                <button class="operator" onclick="appendToDisplay('+')">+</button>
                 </div>
                 <div>
-                <button class="operand zero">0</button>
-                <button class="decimal">.</button>
+                <button class="operand expand" onclick="appendToDisplay(0)">0</button>
+                <button class="decimal" onclick="appendToDisplay('.')">.</button>
                 <button class="equals">=</button>
                 </div>
                 </div>
