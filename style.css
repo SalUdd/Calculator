@@ -36,13 +36,23 @@ button{
 }
 
 .display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
     box-sizing: border-box;
     height: 40%;
     width: 100%;
     align-self: center;
     background-color: lightgray;
     border: 1px solid black;
+    overflow: hidden;
+}
+
+.display p {
     
+    font-size: 4rem;
+    font: 600;
+   
 }
 
 .calContent{
@@ -68,7 +78,7 @@ button{
     
 }
 
-.zero{
+.expand{
     flex-grow: 1;
 }
 .operator {
